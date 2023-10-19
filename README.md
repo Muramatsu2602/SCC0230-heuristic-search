@@ -18,11 +18,16 @@ Nesta fase, a equipe escolheu o desafio de otimizar rotas de voos entre aeroport
 
 ### Etapa 2: Escolha e Implementação de Estratégias de Busca Cega
 
-Após a modelagem, a equipe analisou diferentes estratégias de busca cega. No entanto, percebeu-se que, para este problema específico, uma abordagem heurística, como o Best-First, seria mais adequada.
+Após a modelagem,  a equipe optou por utilizar o Depth First Search como exemplo de busca não informada sobre o problema em questão. No entanto, percebeu-se que, para este problema específico, uma abordagem heurística, como o Best-First, seria mais adequada.
 
 ### Etapa 3: Exploração de Estratégias de Busca Adicionais (Opcional)
 
 Embora a equipe tenha optado pelo Best-First, outras estratégias foram consideradas e analisadas. Esta etapa serve como uma reflexão e análise crítica das escolhas feitas, garantindo que a solução escolhida seja realmente a mais adequada para o problema.
+
+* [ ] A implementação do algoritmo de A* se mostrou mais eficiente do que outras abordagens eurísticas. Destacamos duas razões para tal:
+
+* **Otimidade** : A* garante encontrar uma solução ótima (o caminho mais curto ou de menor custo) se a heurística utilizada for admissível (nunca superestima o custo real) e consistente.
+* **Eficiência** : A* combina o melhor dos dois mundos - leva em consideração o custo real do caminho até o momento (como a busca de custo uniforme) e a heurística estimada até o objetivo (como a BFS). Isso faz com que evite explorar caminhos que, embora pareçam promissores no início, podem não ser ótimos ao final.
 
 ## Conclusão 🎯
 
